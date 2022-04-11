@@ -1,19 +1,19 @@
-import { generatePath, Link } from "react-router-dom";
-import { PROJECT } from "../config/routes";
+import {generatePath, Link} from 'react-router-dom';
+import {PROJECT} from '../config/routes';
 
 const projects = [
   {
     id: 1,
-    name: "Proyecto 1",
+    name: 'Proyecto 1'
   },
   {
     id: 2,
-    name: "Proyecto 2",
+    name: 'Proyecto 2'
   },
   {
     id: 3,
-    name: "Proyecto 3",
-  },
+    name: 'Proyecto 3'
+  }
 ];
 
 function ProjectsList() {
@@ -23,9 +23,7 @@ function ProjectsList() {
       <ul>
         {projects.map((project) => (
           <li key={project.id}>
-            <Link to={generatePath(PROJECT, { id: project.id })}>
-              {project.name}
-            </Link>
+            <Link to={generatePath(PROJECT, {id: project.id})}>{project.name}</Link>
           </li>
         ))}
       </ul>

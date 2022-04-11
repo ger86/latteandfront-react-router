@@ -1,7 +1,7 @@
-import { useParams } from "react-router-dom";
+import {useParams} from 'react-router-dom';
 
 function Project() {
-  const { id } = useParams();
+  const {id} = useParams();
   return <div>Project: {id}</div>;
 }
 

@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
-import { THANKS } from "../config/routes";
+import {useNavigate} from 'react-router-dom';
+import {THANKS} from '../config/routes';
 
 function Contact() {
   const navigate = useNavigate();

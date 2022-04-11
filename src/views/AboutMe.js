@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import {useState} from 'react';
+import {useSearchParams} from 'react-router-dom';
 
 function AboutMe() {
   const [searchParams, setSearchParams] = useSearchParams();
-  const name = searchParams.get("name");
+  const name = searchParams.get('name');
   const [value, setValue] = useState(name);
 
   function handleChange(event) {
@@ -13,13 +13,13 @@ function AboutMe() {
   function handleSubmit(event) {
     event.preventDefault();
     setSearchParams({
-      name: value,
+      name: value
     });
   }
 
   return (
     <div>
-      <div>¡Hola, {name ?? "desconocido"}!</div>
+      <div>¡Hola, {name ?? 'desconocido'}!</div>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Valor:</label>
