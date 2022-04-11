@@ -17,6 +17,7 @@ const projects = [
 ];
 
 function Home() {
+  console.log('hola');
   return (
     <div>
       <h1>Home</h1>
