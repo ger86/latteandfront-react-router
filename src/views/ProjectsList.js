@@ -16,11 +16,10 @@ const projects = [
   },
 ];
 
-function Home() {
+function ProjectsList() {
   return (
     <div>
-      <h1>Home</h1>
-      <h2>Proyectos</h2>
+      <h1>Proyectos</h1>
       <ul>
         {projects.map((project) => (
           <li key={project.id}>
@@ -34,4 +33,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default ProjectsList;

@@ -1,17 +1,16 @@
-import React from 'react';
-import { useHistory } from "react-router-dom";
-import {THANKS} from '../config/routes';
+import { useNavigate } from "react-router-dom";
+import { THANKS } from "../config/routes";
 
-function Contact(props) {
-  const history = useHistory();
+function Contact() {
+  const navigate = useNavigate();
 
   function handleClick() {
-    history.push(THANKS);
+    navigate(THANKS);
   }
 
   return (
     <button type="button" onClick={handleClick}>
-      ¡Gracias!
+      Enviar
     </button>
   );
 }
